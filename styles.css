@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.centro {
+    background-color: #537a908a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(11, 147, 197, 0.551);
+}
+
+.adicionar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #135dc49f;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #135dc4f1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba(239, 241, 239, 0.756);
+    box-shadow: 0 0 5px rgb(108, 105, 105);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    .deletar-btn{
+        background-color: #444f47bb;
+        transition: background-color 0.5s;
+    }
+}
+
+li:hover {
+    background-color: #c5c9c589;
+}
+
+.feito {
+    text-decoration: line-through;
+    opacity: 0.7;
+    background-color: #941212a3;
+    .deletar-btn{
+        background-color: #ccd5cd;
+    }
+    .deletar-btn:hover {
+        background-color: #444f47;
+    }
+}
+
+.deletar-btn {
+    margin-left: auto;
+    padding: 4px 8px;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.deletar-btn:hover {
+    background-color: #cc0000;
+}
